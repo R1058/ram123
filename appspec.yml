@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+    destination: /home/ec2-user/spring-boot-mongo/
+hooks:
+  ApplicationStop:
+   - location: ron.sh
+     timeout: 300
+
